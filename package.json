@@ -1,20 +1,28 @@
 {
-  "name": "AE_Sensing",
+  "name": "ae_sample",
   "version": "0.0.1",
-  "main": "src/app.js",
-  "repository": "https://github.com/BunkerBusterDev/ApplicationEntity",
-  "author": "BunkerBusterDev <bunkerbusterdev@gmail.com>",
-  "license": "MIT",
+  "description": "",
+  "main": ".eslintrc.js",
   "scripts": {
-    "dev": "cross-env NODE_PATH=src nodemon --inspect=50011 src/app --exec babel-node",
+    "dev": "cross-env NODE_PATH=src nodemon --inspect=50010 src/app --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BunkerBusterDev/ApplicationEntity.git"
+  },
+  "author": "BunkerBusterDev <bunkerbusterdev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BunkerBusterDev/ApplicationEntity/issues"
+  },
+  "homepage": "https://github.com/BunkerBusterDev/ApplicationEntity#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
-    "eslint": "^8.12.0",
+    "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.5.0",
@@ -27,5 +35,9 @@
     "presets": [
       "@babel/env"
     ]
+  },
+  "dependencies": {
+    "ip": "^1.1.5",
+    "shortid": "^2.2.16"
   }
 }

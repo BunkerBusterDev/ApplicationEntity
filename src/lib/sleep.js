@@ -1,4 +1,4 @@
-exports.sleep = (ms) => {
+module.exports = (ms) => {
     return new Promise((resolve, reject) => {
         try{
             setTimeout(resolve, ms);
@@ -6,4 +6,4 @@ exports.sleep = (ms) => {
             reject(error);
         }
     });
-}
+  }

@@ -17,7 +17,7 @@ watchdogTimer.on('watchdog', () => {
         // eslint-disable-next-line
         if(watchdogTimerValueQueue.hasOwnProperty(id)) {
             ++watchdogTickQueue[id];
-            if((watchdogTickQueue[id] % watchdogTimerValueQueue[id])===0) {
+            if((watchdogTickQueue[id] % watchdogTimerValueQueue[id]) === 0) {
                 watchdogTickQueue[id] = 0;
                 if(watchdogCallbackQueue[id]) {
                     watchdogCallbackQueue[id](id, watchdogParam1Queue[id], watchdogParam2Queue[id], watchdogParam3Queue[id]);
